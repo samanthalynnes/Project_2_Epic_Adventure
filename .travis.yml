@@ -3,10 +3,11 @@ node_js: "10"
 branches:
   only:
   - master
+  - develop
 cache:
   directories:
     - node_modules
-service:
-  - mysql
-before_install:
-  - mysql -e 'CREATE DATABASE testdb;'
+script:
+  - npm run lint
+  - npm test
+  
