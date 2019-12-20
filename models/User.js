@@ -1,6 +1,7 @@
 "use strict";
 
 module.exports = (sequelize, DataTypes) => {
+
   const User = sequelize.define("User",
     {
       user: {
@@ -17,9 +18,18 @@ module.exports = (sequelize, DataTypes) => {
       page: {
         type: DataTypes.INTEGER,
         allowNull: false
+
       }
+    },
+    gender: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false
+    },
+    page: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
-  );
+  });
   User.associate = function(_models) {
     // associations can be defined here
   };
