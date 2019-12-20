@@ -16,6 +16,8 @@ module.exports = {
     dialect: "mysql"
   },
   production: {
-    use_env_variable: "PLACE_DB_ENV_HERE"
+
+    // eslint-disable-next-line prettier/prettier
+    "use_env_variable": "PLACE_DB_ENV_HERE"
   }
-};;
+};
