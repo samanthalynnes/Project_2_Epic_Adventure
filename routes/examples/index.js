@@ -1,31 +1,31 @@
 const Router = require("express").Router;
 const db = require("../../models");
 
-const exampleRoutes = Router();
+const sceneRoutes = Router();
 
 // Get all examples
-exampleRoutes
+sceneRoutes
   .route("/")
 
   .get(async (_req, res) => {
-    const dbExamples = await db.Example.findAll({});
+    const dbExamples = await db.Scene.findAll({});
     res.json(dbExamples);
   })
 
   .post(async (req, res) => {
-    const dbExample = await db.Example.create(req.body);
+    const dbExample = await db.Scene.create(req.body);
     res.json(dbExample);
   });
 
 // Delete an example by id
-exampleRoutes.delete("/:id", async (req, res) => {
+sceneRoutes.delete("/:id", async (req, res) => {
   const options = {
     where: {
       id: req.params.id
     }
   };
-  const dbExample = await db.Example.destroy(options);
+  const dbExample = await db.Scene.destroy(options);
   res.json(dbExample);
 });
 
-module.exports = exampleRoutes;
+module.exports = sceneRoutes;
