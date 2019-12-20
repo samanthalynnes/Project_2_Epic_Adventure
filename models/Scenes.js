@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = (sequelize, DataTypes) => {
-  const Scene = sequelize.define("sceneData",
+  const Scene = sequelize.define("Scene",
     {
         scenes: DataTypes.TEXT
     }

@@ -3,32 +3,27 @@ const db = require("../models");
 
 const htmlRoutes = new Router();
 
-htmlRoutes.get("/", async (req, res) => {
-  const dbExamples = await db.Example.findAll({});
+htmlRoutes.get("/", async (_req, res) => {
+  const intro = await db.Scene.findAll({});
 
-  res.render("index", {
-    msg: "Welcome!",
-    examples: dbExamples
-  });
+  res.render("index", {scenes: intro});
 });
 
 // Load example page and pass in an example by id
-htmlRoutes.get("/example/:id", async (req, res) => {
+htmlRoutes.get("/scenes/:id", async (req, res) => {
   const options = {
     where: {
       id: req.params.id
     }
   };
 
-  const dbExample = await db.Example.findOne(options);
+  const dbScene = await db.Scene.findOne(options);
 
-  res.render("example", {
-    example: dbExample
-  });
+  res.render("scenes", {scenes: dbScene});
 });
 
 // Render 404 page for any unmatched routes
-htmlRoutes.get("*", async (req, res) => {
+htmlRoutes.get("*", async (_req, res) => {
   res.render("404");
 });
 
