@@ -17,6 +17,6 @@ module.exports = {
   },
   production: {
     // eslint-disable-next-line prettier/prettier
-    "use_env_variable": "PLACE_DB_ENV_HERE"
+    "use_env_variable": "JAWSDB_URL"
   }
 };
