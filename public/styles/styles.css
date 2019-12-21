@@ -71,7 +71,7 @@ a {
   color: black;
 }
 a:visited {
-  color: #636;
+  color: black;
 }
 a:hover, a:active, a:focus {
   color:#c33;
