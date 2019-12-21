@@ -14,13 +14,13 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Handlebars
-app.engine(
-  "pug",
-  pug({
-    defaultLayout: "main"
-  })
-);
-app.set("view engine", "pug");
+// app.engine(
+//   "pug",
+//   pug({
+//     defaultLayout: "main"
+//   })
+// );
+// app.set("view engine", "pug");
 
 // Routes
 app.use(routes);

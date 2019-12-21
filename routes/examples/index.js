@@ -1,31 +1,36 @@
 const Router = require("express").Router;
 const db = require("../../models");
 
-const sceneRoutes = Router();
+const allRoutes = Router();
 
-// Get all examples
-sceneRoutes
+// Get all scenes
+allRoutes
   .route("/")
 
   .get(async (_req, res) => {
-    const dbExamples = await db.Scene.findAll({});
-    res.json(dbExamples);
-  })
-
-  .post(async (req, res) => {
-    const dbExample = await db.Scene.create(req.body);
-    res.json(dbExample);
+    const dbFind = await db.Scene.findAll({});
+    res.json(dbFind);
   });
 
-// Delete an example by id
-sceneRoutes.delete("/:id", async (req, res) => {
-  const options = {
-    where: {
-      id: req.params.id
-    }
-  };
-  const dbExample = await db.Scene.destroy(options);
-  res.json(dbExample);
+// Below for user table
+allRoutes.post("/user", async (req, res) => {
+  const dbPost = await db.User.create(req.body);
+  res.json(dbPost);
 });
 
-module.exports = sceneRoutes;
+allRoutes.put("/user", async (req, res) => {
+  const options = {
+    where: {
+      id: req.body.id
+    }
+  };
+  const dbUpdate = await db.User.update(
+    {
+      page: req.body.page
+    },
+    options
+  );
+  res.json(dbUpdate);
+});
+
+module.exports = allRoutes;
