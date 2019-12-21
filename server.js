@@ -1,7 +1,6 @@
 require("dotenv").config();
 const express = require("express");
 // const exphbs = require("express-handlebars");
-const pug = require("pug");
 const routes = require("./routes");
 const db = require("./models");
 
@@ -13,13 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
-// Handlebars
-app.engine(
-  "pug",
-  pug({
-    defaultLayout: "main"
-  })
-);
+app.engine("pug", require("pug").__express);
 app.set("view engine", "pug");
 
 // Routes
