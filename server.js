@@ -12,8 +12,19 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
+<<<<<<< HEAD
 app.engine("pug", require("pug").__express);
 app.set("view engine", "pug");
+=======
+// Handlebars
+// app.engine(
+//   "pug",
+//   pug({
+//     defaultLayout: "main"
+//   })
+// );
+// app.set("view engine", "pug");
+>>>>>>> 8af43f2e60afa2a5c28b2ff193c24175533654c6
 
 // Routes
 app.use(routes);
