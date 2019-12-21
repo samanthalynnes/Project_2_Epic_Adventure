@@ -15,7 +15,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     page: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      defaultValue: 1
     }
   });
   User.associate = function(_models) {
