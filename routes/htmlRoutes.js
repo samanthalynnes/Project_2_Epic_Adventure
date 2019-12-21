@@ -21,6 +21,10 @@ htmlRoutes.get("/scenes/:id", async (req, res) => {
   res.render("index", { scenes: dbScene });
 });
 
+htmlRoutes.get("/login", async (_req, res) => {
+  res.render("form");
+});
+
 // Render 404 page for any unmatched routes
 // htmlRoutes.get("*", async (_req, res) => {
 //   res.render("404");
