@@ -4,9 +4,8 @@ const db = require("../models");
 const htmlRoutes = new Router();
 
 htmlRoutes.get("/", async (_req, res) => {
-  const intro = await db.Scene.findAll({});
-
-  res.render("index", { scenes: intro });
+  // const intro = await db.Scene.findAll({});
+  res.render("./layouts/main");
 });
 
 // Load example page and pass in an example by id
