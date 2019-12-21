@@ -4,7 +4,7 @@
 
 body {
 
-  background-image: url("./258107.jpg");
+  background-image: url("../images/258107.jpg");
   background-repeat:repeat-x;
   background-attachment:fixed;
   background-position: left center;
@@ -54,7 +54,7 @@ body {
   font-family:MedievalSharp;
 }
 
-.startScreen-h2 {
+.startScreen h2 {
   font-family:MedievalSharp;
   font-size: 30px;
   border-radius:10px;
@@ -78,11 +78,11 @@ a:hover, a:active, a:focus {
   }
 }
 
-#startScreen p {
+.startScreen p {
   font-weight: bold;
 }
 
-#startScreen span {
+.startScreen span {
   position: relative;
   font-size: 18px;
   animation: up 2s linear infinite;
