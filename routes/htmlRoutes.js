@@ -25,6 +25,9 @@ htmlRoutes.get("/login", async (_req, res) => {
   res.render("form");
 });
 
+htmlRoutes.get("/story", async (_req, res) => {
+  res.render("index");
+});
 // Render 404 page for any unmatched routes
 // htmlRoutes.get("*", async (_req, res) => {
 //   res.render("404");

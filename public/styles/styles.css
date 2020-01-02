@@ -98,6 +98,28 @@ a.button{
   animation-delay: 3s;
 }
 
+.story {
+  text-align: center;
+  font-family: MedievalSharp;
+  color: rgba(255, 255, 255, 0.685);
+}
+
+.story p {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.story a {
+  font-weight: bold;
+  font-size: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.685);
+}
+
 @keyframes up {
   25% {
     top: -4px;
