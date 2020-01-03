@@ -5,22 +5,30 @@ html
     title Story
     
     link(rel="stylesheet", type="text/css", href="//fonts.googleapis.com/css?family=MedievalSharp")
-    link(rel="stylesheet", type="text/css", href="./styles/styles.css")
-    link(rel="stylesheet", type="javascript", href="./js/index.js")
+    link(rel="stylesheet", type="text/css", href="/styles/styles.css")
+    link(rel="stylesheet", type="javascript", href="/js/index.js")
 
-    body
         
-    .story
-        p #{scenes.scenes}
+
+        //- a(href="/scenes" class="button" id="go-to-scenes") Continue
+
 
 if (scenes.id === 1)
-    a(href="/scenes/2" class="button" id="go-to-scenes") Continue
+    body.page1
+        p.stuff1 #{scenes.scenes}
+
+        a(href="/scenes/2" class="button" id="go-to-scenes") Continue
 
 if (scenes.id === 2)
-    a(href="/scenes/3") #{scenes.choiceA}
-    | <br/>
-    | <br/>
-    a(href="/scenes/7") #{scenes.choiceB}
+
+    body.page2
+        p.stuff2 #{scenes.scenes}
+
+        a(href="/scenes/3") #{scenes.choiceA}
+        | <br/>
+        | <br/>
+        a(href="/scenes/7") #{scenes.choiceB}
+
 
 if (scenes.id === 3)
     a(href="/scenes/4") #{scenes.choiceA}

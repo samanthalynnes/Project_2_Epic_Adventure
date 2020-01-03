@@ -2,20 +2,6 @@
   line-height: 2.5;
 } */
 
-body {
-
-  background-image: url("../images/258107.jpg");
-  background-repeat:repeat-x;
-  background-attachment:fixed;
-  background-position: left center;
-  background-size: 100%;
-  position:absolute;
-  height:100%;
-  width: 100%;
-  margin:0;
-
-
-}
 
 #startScreen {
     
@@ -133,4 +119,19 @@ a.button{
   animation: pulse 1.5s linear infinite;
 }
 
+.page1 {
+  background-image: url("../images/258107.jpg");
+  background-repeat:repeat-x;
+  background-attachment:fixed;
+  background-position: left center;
+  background-size: 100%;
+  position:absolute;
+  height:100%;
+  width: 100%;
+  margin:0;  
+}
 
+.page2 {
+  background-color: blue;
+  background-size: cover;
+}
