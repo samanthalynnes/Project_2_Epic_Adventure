@@ -15,7 +15,8 @@ allRoutes
 // Below for user table
 allRoutes.post("/user", async (req, res) => {
   const dbPost = await db.User.create(req.body);
-  res.json(dbPost);
+  console.log(dbPost);
+  res.redirect("/scenes/1");
 });
 
 allRoutes.put("/user", async (req, res) => {
