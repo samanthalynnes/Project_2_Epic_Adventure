@@ -12,8 +12,45 @@ html
         
     .story
         p #{scenes.scenes}
-        a(href="/scenes" class="button" id="go-to-scenes") Continue
+        //- a(href="/scenes" class="button" id="go-to-scenes") Continue
 
 if (scenes.id === 1)
-    p This is Scene 1.
+    a(href="/scenes/2" class="button" id="go-to-scenes") Continue
+
+if (scenes.id === 2)
+    p #{scenes.choiceA}
+    a(href="/scenes/3") Click
+    p #{scenes.choiceB}
+    a(href="/scenes/7") Click
+
+if (scenes.id === 3)
+    p #{scenes.choiceA}
+    a(href="/scenes/4") Click
+    p #{scenes.choiceB}
+    a(href="/scenes/8") Click
+
+if (scenes.id === 4)
+    p #{scenes.choiceA}
+    a(href="/scenes/5") Click
+    p #{scenes.choiceB}
+    a(href="/scenes/9") Click
+
+if (scenes.id === 5)
+    p #{scenes.choiceA}
+    a(href="/scenes/6") Click
+    p #{scenes.choiceB}
+    a(href="/scenes/10") Click
+    
+if (scenes.id === 6)
+    p #{scenes.choiceA}
+    a(href="/scenes/11") Click
+    p #{scenes.choiceB}
+    a(href="/scenes/12") Click
+
+if (scenes.id === 7 || scenes.id === 8 || scenes.id === 9 || scenes.id === 10 || scenes.id === 11)
+    img(src="/images/gameover.jpg")
+
+if (scenes.id === 12)
+    img(src="/images/youwin.jpg")
+
 //- p Scenarios: #{scenes.scenes}
