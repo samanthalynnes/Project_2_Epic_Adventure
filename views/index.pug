@@ -18,10 +18,9 @@ if (scenes.id === 1)
     a(href="/scenes/2" class="button" id="go-to-scenes") Continue
 
 if (scenes.id === 2)
-    p #{scenes.choiceA}
-    a(href="/scenes/3") Click
-    p #{scenes.choiceB}
-    a(href="/scenes/7") Click
+    a(href="/scenes/3") #{scenes.choiceA}
+    | <br/>
+    a(href="/scenes/7") #{scenes.choiceB}
 
 if (scenes.id === 3)
     p #{scenes.choiceA}
