@@ -2,6 +2,20 @@
   line-height: 2.5;
 } */
 
+body {
+
+  background-image: url("../images/258107.jpg");
+  background-repeat:repeat-x;
+  background-attachment:fixed;
+  background-position: left center;
+  background-size: 100%;
+  position:absolute;
+  height:100%;
+  width: 100%;
+  margin:0;
+
+
+}
 
 #startScreen {
     
@@ -84,7 +98,108 @@ a.button{
   animation-delay: 3s;
 }
 
-.story {
+.page1 {
+  background-image: url("../images/intro3\ \(2\).jpg");
+  background-size: 100% 100%;
+  font-family:MedievalSharp;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.658);
+}
+
+.page2 {
+  background-image: url("../images/intro5.1.jpg");
+  background-size: 100% 100%;
+  margin: 0;
+  text-align: center;
+  font-family: MedievalSharp;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.658);
+}
+
+.text2 {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.658);
+}
+
+.page2 a {
+  color: rgba(255, 255, 255, 0.658);
+  border-radius: 10px;
+  box-shadow: 0 2px 40px white;
+  padding: 10px;
+}
+
+.page3 {
+  background-image: url("../images/act3.jpg");
+  background-size: 100% 100%;
+  margin: 0;
+  text-align: center;
+  font-family: MedievalSharp;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.658);
+}
+
+.page3 a {
+  color: rgba(255, 255, 255, 0.658);
+  border-radius: 10px;
+  box-shadow: 0 2px 40px white;
+  padding: 10px;
+}
+
+.page4 {
+  background-image: url("../images/intro5.jpg");
+  background-size: 100% 100%;
+  margin: 0;
+  text-align: center;
+  font-family: MedievalSharp;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0);
+}
+
+.page4 a {
+  color: rgba(255, 255, 255, 0.658);
+  border-radius: 10px;
+  box-shadow: 0 2px 40px white;
+  padding: 10px;
+}
+
+.page5 {
+  background-image: url("../images/intro2.jpg");
+  background-size: 100% 100%;
+  margin: 0;
+  text-align: center;
+  font-family: MedievalSharp;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0);
+}
+
+.page5 a {
+  color: rgba(255, 255, 255, 0.658);
+  border-radius: 10px;
+  box-shadow: 0 2px 40px white;
+  padding: 10px;
+}
+
+.page6 {
+  background-image: url("../images/act5.jpg");
+  background-size: 100% 100%;
+  margin: 0;
+  text-align: center;
+  font-family: MedievalSharp;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0);
+}
+
+.page6 a {
+  color: rgba(255, 255, 255, 0.658);
+  border-radius: 10px;
+  box-shadow: 0 2px 40px white;
+  padding: 10px;
+}
+/* .story {
   text-align: center;
   font-family: MedievalSharp;
   color: rgba(255, 255, 255, 0.685);
@@ -104,7 +219,7 @@ a.button{
   margin-left: auto;
   margin-right: auto;
   color: rgba(255, 255, 255, 0.685);
-}
+} */
 
 @keyframes up {
   25% {
@@ -117,21 +232,4 @@ a.button{
   text-align: center;
   text-shadow: 0 2px 0 limegreen, 0 1px 64px white;
   animation: pulse 1.5s linear infinite;
-}
-
-.page1 {
-  background-image: url("../images/258107.jpg");
-  background-repeat:repeat-x;
-  background-attachment:fixed;
-  background-position: left center;
-  background-size: 100%;
-  position:absolute;
-  height:100%;
-  width: 100%;
-  margin:0;  
-}
-
-.page2 {
-  background-color: blue;
-  background-size: cover;
 }
