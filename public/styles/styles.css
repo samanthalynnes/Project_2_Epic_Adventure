@@ -104,6 +104,17 @@ a.button{
   font-family:MedievalSharp;
   font-size: 25px;
   color: rgba(255, 255, 255, 0.658);
+  text-align: center;
+}
+
+.text1 {
+margin:auto;
+position: relative;
+width: 600px;
+color:white;
+overflow: initial;  
+
+height:600px;
 }
 
 .page2 {
@@ -255,3 +266,5 @@ a.button{
   text-shadow: 0 2px 0 limegreen, 0 1px 64px white;
   animation: pulse 1.5s linear infinite;
 }
+
+
