@@ -1,16 +1,31 @@
 $(document).ready(function() {
-  $("").on("click", event => {
+  $("#user-submit").on("click", () => {
+    const currentUser = $("#user-id")
+      .val()
+      .trim();
+  });
+
+  $(".userPage").on("click", event => {
     event.preventDefault();
 
-    let currentPage = window.location.href;
-    const pageID = parseInt(currentPage.slice(-1)[0]);
+    console.log(currentUser);
 
     $.ajax({
-      method: "PUT",
-      url: "/api/scenes/user",
-      data: {
-        id: pageID
-      }
-    }).then();
+      method: "GET",
+      url: `/user/${currentUser}`
+    }).then(result => {
+      console.log(result);
+
+      $.ajax({
+        method: "PUT",
+        url: "/api/scenes/user",
+        data: {
+          page: newPage
+        }
+      });
+    });
   });
 });
+
+// let currentPage = window.location.href;
+// const pageID = parseInt(currentPage.slice(-1)[0]);

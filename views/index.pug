@@ -6,7 +6,9 @@ html
     
     link(rel="stylesheet", type="text/css", href="//fonts.googleapis.com/css?family=MedievalSharp")
     link(rel="stylesheet", type="text/css", href="/styles/styles.css")
-    link(rel="stylesheet", type="javascript", href="/js/index.js")
+    script(src="https://code.jquery.com/jquery.js")
+    script(src="/js/index.js")
+
 
 
 if (scenes.id === 1)
@@ -18,7 +20,7 @@ if (scenes.id === 1)
 if (scenes.id === 2)
     body.page2
         p.text2 #{scenes.scenes}
-        a(href="/scenes/3") #{scenes.choiceA}
+        a.userPage(href="/scenes/3") #{scenes.choiceA}
         | <br/>
         | <br/>
         a(href="/scenes/7") #{scenes.choiceB}
@@ -26,7 +28,7 @@ if (scenes.id === 2)
 if (scenes.id === 3)
     body.page3
         p.text2 #{scenes.scenes}
-        a(href="/scenes/4") #{scenes.choiceA}
+        a.userPage(href="/scenes/4") #{scenes.choiceA}
         | <br/>
         | <br/>
         a(href="/scenes/8") #{scenes.choiceB}
@@ -34,7 +36,7 @@ if (scenes.id === 3)
 if (scenes.id === 4)
     body.page4
         p.text2 #{scenes.scenes}
-        a(href="/scenes/5") #{scenes.choiceA}
+        a.userPage(href="/scenes/5") #{scenes.choiceA}
         | <br/>
         | <br/>
         a(href="/scenes/9") #{scenes.choiceB}
@@ -42,7 +44,7 @@ if (scenes.id === 4)
 if (scenes.id === 5)
     body.page5
         p.text2 #{scenes.scenes}
-        a(href="/scenes/6") #{scenes.choiceA}
+        a.userPage(href="/scenes/6") #{scenes.choiceA}
         | <br/>
         | <br/>
         a(href="/scenes/10") #{scenes.choiceB}
@@ -50,10 +52,10 @@ if (scenes.id === 5)
 if (scenes.id === 6)
     body.page6
         p.text2 #{scenes.scenes}
-        a(href="/scenes/12") #{scenes.choiceA}
+        a.userPage(href="/scenes/12") #{scenes.choiceA}
         | <br/>
         | <br/>
-        a(href="/scenes/11") #{scenes.choiceB}
+        a.userPage(href="/scenes/11") #{scenes.choiceB}
 
 if (scenes.id === 7 || scenes.id === 8 || scenes.id === 9 || scenes.id === 10 || scenes.id === 11)
     img(src="/images/gameover.jpg")
