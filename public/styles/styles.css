@@ -98,12 +98,43 @@ a.button{
   animation-delay: 3s;
 }
 
+.formpage {
+  background-image: url("../images/act2.jpg");
+  background-size: 100% 100%;
+  font-family:MedievalSharp;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.658);
+  text-align: left;
+  margin-left: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  /* margin-top: 200px; */
+  position: fixed;
+  top: 50;
+}
+
+#form-submit {
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+}
 .page1 {
   background-image: url("../images/intro3\ \(2\).jpg");
   background-size: 100% 100%;
   font-family:MedievalSharp;
   font-size: 25px;
   color: rgba(255, 255, 255, 0.658);
+  text-align: center;
+}
+
+.text1 {
+margin:auto;
+position: relative;
+width: 600px;
+color:white;
+overflow: initial;  
+
+height:600px;
 }
 
 .page2 {
@@ -139,7 +170,10 @@ a.button{
   text-align: center;
   font-family: MedievalSharp;
   font-size: 25px;
+  font-weight: bold;
   color: rgba(255, 255, 255, 0.658);
+  /* position: fixed;
+  top: 500; */
 }
 
 .page3 a {
@@ -156,6 +190,7 @@ a.button{
   text-align: center;
   font-family: MedievalSharp;
   font-size: 25px;
+  font-weight: bold;
   color: rgba(255, 255, 255, 0);
 }
 
@@ -169,11 +204,12 @@ a.button{
 .page5 {
   background-image: url("../images/intro2.jpg");
   background-size: 100% 100%;
-  margin: 0;
+  margin-top: 400px;
   text-align: center;
   font-family: MedievalSharp;
   font-size: 25px;
-  color: rgba(255, 255, 255, 0);
+  color:white;
+  font-weight: bold;
 }
 
 .page5 a {
@@ -199,27 +235,46 @@ a.button{
   box-shadow: 0 2px 40px white;
   padding: 10px;
 }
-/* .story {
+
+.pagelost  {
+  background-image: url("../images/gameover.jpg");
+  background-size: 100% 100%;
+  margin: 0; 
   text-align: center;
-  font-family: MedievalSharp;
-  color: rgba(255, 255, 255, 0.685);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: absolute;
 }
 
-.story p {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 50px;
-  font-size: 30px;
-  font-weight: bold;
+#lost {
+  color: rgba(255, 255, 255, 0.658);
+  border-radius: 10px;
+  box-shadow: 0 2px 40px white;
+  padding: 10px;
+  font-size: 50px;
+
 }
 
-.story a {
-  font-weight: bold;
-  font-size: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgba(255, 255, 255, 0.685);
-} */
+.pagewon {
+  background-image: url("../images/youwin.jpg");
+  background-size: 100% 100%;
+  margin: 0;
+  text-align: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: absolute;
+}
+
+#won {
+  color: rgba(255, 255, 255, 0.658);
+  border-radius: 10px;
+  box-shadow: 0 2px 40px white;
+  padding: 10px;
+  font-size: 40px;
+  position: fixed;
+  bottom: 10;
+  left: 500;
+}
 
 @keyframes up {
   25% {
@@ -233,3 +288,5 @@ a.button{
   text-shadow: 0 2px 0 limegreen, 0 1px 64px white;
   animation: pulse 1.5s linear infinite;
 }
+
+

@@ -6,6 +6,12 @@ html
 
     title Form
 
+    link(rel="stylesheet", type="text/css", href="//fonts.googleapis.com/css?family=MedievalSharp")
+    link(rel="stylesheet", type="text/css", href="./styles/styles.css")
+    link(rel="stylesheet", type="javascript", href="./js/index.js")
+
+    body.formpage
+
     form(action = "api/scenes/user" method = "POST")
         p User:
             <br/>
@@ -15,7 +21,10 @@ html
             <br/>
         input(type = "radio" name = "gender" value = "1" class = "gender" checked)
         | Male
+        | <br/>
+        | <br/>
         input(type = "radio" name = "gender" value = "0" class = "gender")
         | Female<br/>
         <br/>  
-        input(type = "submit" value = "submit" id="user-submit")
+
+        input(type = "submit" value = "Submit" id = "form-submit")
