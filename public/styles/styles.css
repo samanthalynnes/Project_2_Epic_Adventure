@@ -199,6 +199,28 @@ a.button{
   box-shadow: 0 2px 40px white;
   padding: 10px;
 }
+
+.pagelost {
+  background-image: url("../images/gameover.jpg");
+  background-size: 100% 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 350px;
+}
+
+#lost {
+  color: rgba(255, 255, 255, 0.658);
+  border-radius: 10px;
+  box-shadow: 0 2px 40px white;
+  padding: 10px;
+}
+
+.pagewon {
+  background-image: url("../images/youwin.jpg");
+  background-size: 100% 100%;
+  margin: 0;
+}
+
 /* .story {
   text-align: center;
   font-family: MedievalSharp;
