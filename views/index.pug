@@ -56,9 +56,14 @@ if (scenes.id === 6)
         a(href="/scenes/11") #{scenes.choiceB}
 
 if (scenes.id === 7 || scenes.id === 8 || scenes.id === 9 || scenes.id === 10 || scenes.id === 11)
-    img(src="/images/gameover.jpg")
+    body.pagelost
+
+    //- img(src="/images/gameover.jpg" height="100%" width="100%")
+    a(href="/scenes/1" class="button" id="lost") PLAY AGAIN
 
 if (scenes.id === 12)
-    img(src="/images/youwin.jpg")
+    body.pagewon
+    //- img(src="/images/youwin.jpg" height="100%" width="100%")
+    a(href="/scenes/1" class="button" id="won") PLAY AGAIN
 
 //- p Scenarios: #{scenes.scenes}
