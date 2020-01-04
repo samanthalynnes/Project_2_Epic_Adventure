@@ -7,7 +7,6 @@ htmlRoutes.get("/", async (_req, res) => {
   res.render("./layouts/main");
 });
 
-
 htmlRoutes.get("/user/:user", async (req, res) => {
   const options = {
     where: {
@@ -38,11 +37,9 @@ htmlRoutes.get("/login", async (_req, res) => {
   res.render("form");
 });
 
-
 // Render 404 page for any unmatched routes
 // htmlRoutes.get("*", async (_req, res) => {
 //   res.render("404");
 // });
-
 
 module.exports = htmlRoutes;
