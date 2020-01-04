@@ -13,6 +13,16 @@ allRoutes
   });
 
 // Below for user table
+allRoutes.get("/user", async (req, res) => {
+  const dbUserFind = await db.User.findOne({
+    where: {
+      user: req.body.user
+    }
+  });
+
+  res.json(dbUserFind);
+});
+
 allRoutes.post("/user", async (req, res) => {
   const dbPost = await db.User.create(req.body);
   console.log(dbPost);

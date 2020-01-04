@@ -1,16 +1,25 @@
 $(document).ready(function() {
-  $("").on("click", event => {
-    event.preventDefault();
+  $("#form-submit").on("click", () => {
+    const currentUser = $("#user-id")
+      .val()
+      .trim();
+  });
 
-    let currentPage = window.location.href;
-    const pageID = parseInt(currentPage.slice(-1)[0]);
-
+  $("").on("click", () => {
     $.ajax({
-      method: "PUT",
-      url: "/api/scenes/user",
-      data: {
-        id: pageID
-      }
-    }).then();
+      method: "GET",
+      url: `/user/${currentUser}`
+    }).then(result => {
+      $.ajax({
+        method: "PUT",
+        url: "/api/scenes/user",
+        data: {
+          page: result
+        }
+      });
+    });
   });
 });
+
+// let currentPage = window.location.href;
+// const pageID = parseInt(currentPage.slice(-1)[0]);
