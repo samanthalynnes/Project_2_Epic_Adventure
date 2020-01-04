@@ -181,6 +181,7 @@ height:600px;
   border-radius: 10px;
   box-shadow: 0 2px 40px white;
   padding: 10px;
+  line-height: 55px;
 }
 
 .page4 {
@@ -227,6 +228,7 @@ height:600px;
   font-family: MedievalSharp;
   font-size: 25px;
   color: rgba(255, 255, 255, 0);
+  font-weight: bold;
 }
 
 .page6 a {
@@ -252,7 +254,8 @@ height:600px;
   box-shadow: 0 2px 40px white;
   padding: 10px;
   font-size: 50px;
-
+  position: relative;
+  top: 400;
 }
 
 .pagewon {
