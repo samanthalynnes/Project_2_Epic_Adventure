@@ -204,11 +204,12 @@ height:600px;
 .page5 {
   background-image: url("../images/intro2.jpg");
   background-size: 100% 100%;
-  margin: 0;
+  margin-top: 400px;
   text-align: center;
   font-family: MedievalSharp;
   font-size: 25px;
-  color: rgba(255, 255, 255, 0);
+  color:white;
+  font-weight: bold;
 }
 
 .page5 a {
